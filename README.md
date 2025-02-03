@@ -6,12 +6,12 @@
 
 ## Episode
 
-- [Let's DESIGN & BUILD PONG with DEEPSEEK + CLAUDE | 12-Min Game Dev Challenge | Ep 3](https://youtu.be/YYnmYXUKmBQ)
+- [Let's DESIGN & BUILD PONG with DEEPSEEK + CLAUDE | 12-Min Game Dev Challenge | Ep 3](https://youtu.be/7StuooKGNB4)
 
 ## 📺 Follow the Journey
 
-- [YouTube](https://youtube.com/@AIOriented) - Watch the development process
-- [Twitter](https://twitter.com/chongdashu) - Daily updates and insights
+- [@AIOriented on YouTube](https://youtube.com/@AIOriented) - YouTube Channel on AI and Games Development
+- [@chongdashu on X/Twitter](https://twitter.com/chongdashu) - Random thoughts and posts
 
 ## 📝 License
 
