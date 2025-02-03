@@ -2,6 +2,7 @@ import { Scene } from 'phaser';
 import { Paddle } from '../ecs/entities/Paddle';
 import { Ball } from '../ecs/entities/Ball';
 import { AIPaddle } from '../ecs/components/AIPaddle';
+import { submitScore } from '../services/supabase/score';
 
 /**
  * Main scene for Pong game
@@ -303,10 +304,13 @@ export class PongScene extends Scene {
   /**
    * Handles game over state
    */
-  private handleGameOver(winner: 'Player' | 'AI'): void {
+  private async handleGameOver(winner: 'Player' | 'AI'): Promise<void> {
     if (!this.gameOverContainer || !this.playerPaddle || !this.aiPaddle) return;
 
     this.isGameOver = true;
+
+    // Save score to Supabase
+    await submitScore(this.playerPaddle.score.hits);
 
     // Update final score text
     const finalScoreText = this.gameOverContainer

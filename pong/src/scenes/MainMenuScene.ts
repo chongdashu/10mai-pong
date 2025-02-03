@@ -101,8 +101,7 @@ export class MainMenuScene extends Phaser.Scene {
       buttonHeight,
       'High Scores',
       () => {
-        // Will implement later
-        console.log('High Scores clicked');
+        this.scene.start('HighScoresScene');
       }
     );
 
